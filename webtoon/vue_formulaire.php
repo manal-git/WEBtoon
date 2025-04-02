@@ -13,8 +13,7 @@
 <h1 class="titre">SIGN UP</h1>
 <form method='POST' action='traitement.php' name='annuaire' enctype='application/x-www-form-urlencoded'>
 
-<div class="inscription1">
-	
+<div class="sub1">
 <tr>
 	<td>PSEUDO : </td>
 	<td><input type='text' name='pseudo' size='20'></td>
@@ -24,12 +23,15 @@
 	<td>EMAIL ADDRESS : </td>
 	<td><input type='text' name='email' size='50' value=''></td>
 </tr>
-<div class="inscription2">
 
 <tr>
 	<td>AGE : </td>
 	<td><input type='number' name='age' size='2' value=''></td>
 </tr>
+
+</div>
+
+<div class="sub2">
 
 <tr>
 	<td>PASSWORD : </td>
@@ -38,19 +40,15 @@
 
 <tr>
 	<td>COMFIRM PASSWORD : </td>
-	<td><input type='password' name='password' size='20' value=''></td>
+	<td><input type='password' name='confirm_pass' size='20' value=''></td>
 </tr>
 
 </div>
-
-
 
 <tr>
-
-<a href="index.php">BACK</a>
-<td colspan="2"><input type='submit' value='SIGN UP'></td>
+<a href="index.php" class="back">BACK</a>
+<td colspan="2"><input type='submit' value='SIGN UP'class="signup"></td>
 </tr>
-</div>
 
 </form>
 

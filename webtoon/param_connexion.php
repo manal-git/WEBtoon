@@ -3,7 +3,7 @@
    $monserveur = "localhost";	// adresse du serveur sql que vous utilisez. ex : "sql.free.fr" ; "localhost" sur WAMP 
    $monlogin = "root";	// login de la base de données. "root" sur WAMP en local	
    $monpass = "";		// mot de passe de la base de données. vide sur WAMP en local
-   $mabase="bridge";	// nom de la base ;suivant ce que vous avez créé comme base dans WAMP)
+   $mabase="webtoon";	// nom de la base ;suivant ce que vous avez créé comme base dans WAMP)
 
 	// connexion au SGBD
 	date_default_timezone_set('Europe/Paris');

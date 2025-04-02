@@ -85,11 +85,52 @@ td { /* table division : division de tableau, autrement dit "cellule" */
 	background-color: #ffffff;
 }
 
-.logo{
+img.logo{
 	width: 5%;
 	display: center;
 	-ms-flex-align: center;
 }
+
 h1.titre{
 	text-align: left;
+	color: black;
+	padding: 15px;
+	display:inline-flex;
+	-ms-flex-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.sub1{
+	margin: auto;
+	padding: 10px;
+	-ms-flex-align: left;
+	box-shadow: 0px 0px 3px #000000;
+}
+
+div.sub2{
+	margin: auto;
+	padding: 10px;
+	-ms-flex-align: left;
+	box-shadow: 0px 0px 3px #000000;
+}
+
+.signup{
+	margin: auto;
+	padding: 10px;
+	box-shadow: 0px 5px 1px #575656;
+	background-color: #e3a2e9;
+	border-radius: 10px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.back{
+	margin: auto;
+	padding: 10px;
+	box-shadow: 0px 5px 1px #575656;
+	background-color: #d7bbeb;
+	border-radius: 10px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	display: inline-flex;
+	-ms-flex-align: center;
 }

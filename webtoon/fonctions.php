@@ -3,7 +3,7 @@
 // page contenant les différentes fonctions d'accès à la base
 
 //_______________________________________________________________
-function insert_membre($nom, $prenom) // insere un nouveau membre  dans la table membres
+function insert_utilisateur($nom, $prenom) // insere un nouveau membre  dans la table membres
 {
 	include 'param_connexion.php'; // fichier externe car la connexion est utilisée dans différentes pages
 	$nb_lignes=0; // initialisation de la variable à zéro
