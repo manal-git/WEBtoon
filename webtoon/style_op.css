@@ -1,0 +1,95 @@
+body { 		/* définit  éléments généraux  */
+	font-family: Verdana, Arial, "sans serif";
+	font-size: 12px;		/*  taille standard */
+	color: #000000; 		/* couleur du texte  */
+	text-align: left;
+	margin: 0px;
+	}
+
+h1 {
+	font-size: 2em;
+	color: #000098; /* bleu */
+	text-align: center;
+	}
+
+a {
+	font-family: Arial, "sans serif";
+	font-size: 1.10em;		/* 110% de la taille standard */
+	color: #000000;
+	text-decoration: none;
+	}
+a:hover {						/* définition du style "lien survolé" */
+	font-family: Arial, "sans serif";
+	font-size: 1.10em;	/* un peu plus petit mais en "Arial Black" : 92% */
+	color: #FF10D9;				/* couleur : rose fluo */
+	text-decoration: none;		
+	}
+	
+p.erreur {						/* définition du style message d'erreur */
+	font-family: Arial, "sans serif";
+	font-size: 1.50em;
+	color: #FF0000;				/* couleur : rouge */
+	text-align:center;
+	text-decoration: none;		
+	}
+	
+p.resultat {						/* définition du style message d'erreur */
+	font-family: Arial, "sans serif";
+	font-size: 1.50em;
+	color: #000098;				/* couleur : rouge */
+	text-align:left;
+	margin-left:20px;
+	text-decoration: none;		
+	}
+
+label{
+	font-family: monospace, sans-serif; 
+	font-size: 1.20em; /* 120% de la taille standard */
+	margin-left: 10px;
+}
+
+table { /* définition générale du style du tableau */
+	border:3px solid #6495ed; /* bordure du tableau : épaisseur, continue/pointillée (dotted), couleur */
+	/*  border-collapse:collapse;   /* option qui fusionne les bordures du tableau aux bordures de cellules */
+	width:40%; /* largeur du tableau dans la page */
+	margin:auto; /* marges automatiques : centrage par défaut */
+	margin-top:20px;
+	background-color: #D0E3FA;
+}
+
+tr{ /* table row : ligne de tableau */
+	height: 20px;	/* hauteur de ligne */
+
+}
+
+th { /* table header : 1ere ligne du tableau */
+	font-family: monospace; 
+	font-size: 1.20em; /* 80% de la taille standard */
+	text-align: center;  /* centrage */
+	border: 1px solid #000099; /* bordure du table header */
+	width: 33%;				/* largeur  */
+	padding: 5px;			/* marge interne  : peut être spécifiée différente au dessus et en dessous
+						Avec padding-top: vous pouvez spécifier l'espace entre le contenu de l'élément et sa limite supérieure, etc. */
+	background-color: #D0E3FA;
+	background-image: url('sky.jpg'); /* fond pour les cellules th */
+}
+
+
+td { /* table division : division de tableau, autrement dit "cellule" */
+	font-family: verdana, sans-serif;
+	font-size: 0.80em; /* 80% de la taille standard */
+	width: 33%; /* suppose 3 colonnes */
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle; /*qui peut prendre les valeurs :  baseline | top | middle */
+	background-color: #ffffff;
+}
+
+.logo{
+	width: 5%;
+	display: center;
+	-ms-flex-align: center;
+}
+h1.titre{
+	text-align: left;
+}
