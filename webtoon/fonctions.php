@@ -3,13 +3,13 @@
 // page contenant les différentes fonctions d'accès à la base
 
 //_______________________________________________________________
-function insert_utilisateur($nom, $prenom) // insere un nouveau membre  dans la table membres
+function insert_utilisateur($pseudo, $email, $mdp, $age) // insere un nouveau membre  dans la table membres
 {
 	include 'param_connexion.php'; // fichier externe car la connexion est utilisée dans différentes pages
 	$nb_lignes=0; // initialisation de la variable à zéro
 	
 	// Requete d'insertion MYSQL. 
-	$requete= "INSERT INTO membres (nom,prenom) VALUES ('$nom','$prenom');";
+	$requete= "INSERT INTO utilisateur (pseudo, email, mdp, age) VALUES ('$pseudo','$email', $mdp, $age);";
 	
 	// tentative d'execution de la requete INSERT dans la base
 	$reponse_serveur=mysqli_query($lien_base, "$requete");
@@ -144,4 +144,4 @@ function update_membre($id,$nom, $prenom) // insere un nouveau membre  dans la t
 
  } // fin fonction update_membre
 
-   ?>
+?>
