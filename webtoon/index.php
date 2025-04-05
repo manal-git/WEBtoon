@@ -8,14 +8,35 @@
  <link href="style_op.css" type="text/css" rel="stylesheet" media="all">
 </head>
 <body>
-<h1>Bienvenue au club de bridge !</h1>
-<ul>
-<li><a href='vue_formulaire.php'>SIGN UP</li>
-<li><a href=''>LOG IN</li>
-<li><a href='vue_listeadherents.php'>PUBLISH</a></li>
-<li><a href=''>LIBRARY</a></li>
-<li><a href=''>GENRES</a></li>
 
-</ul>
+<div class="header">
+  <div class="logo">
+    <img class="logo" src="logo.png" alt="logo">
+  </div>
+
+  <div class="button2">
+    <a href="vue_listeadherents.php" class="button">LIBRARY</a>
+    <a href="#" class="button">GENRES</a>
+  </div>
+
+  <div class="button1">
+    <a href="signup.php" class="button">SIGN UP</a>  
+    <a href="login.php" class="button">LOG IN</a>
+  </div>
+</div>
+
+<div class="carousel">
+  <img class="image" src="image.png" alt="carousel image">
+  <img class="image" src="image.png" alt="carousel image">
+  <img class="image" src="image.png" alt="carousel image">
+  <img class="image" src="image.png" alt="carousel image">
+</div>
+
+<div class="publish-link">
+  <a href="publish.php" class="button">PUBLISH</a>
+</div>
+
+
+
 </body>
 </html>
