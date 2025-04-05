@@ -1,0 +1,259 @@
+body { 		
+	font-family: Verdana, Arial, "sans serif";
+	font-size: 12px;	
+	color: #000000; 		
+	text-align: left;
+	margin: 0px;
+	}
+
+a {
+	font-family: Arial, "sans serif";
+	font-size: 1.10em;	
+	color: #000000;
+	text-decoration: none;
+	}
+
+	
+a:hover {				
+	font-family: Arial, "sans serif";
+	font-size: 1.10em;	
+	color: #d359a8;			
+	text-decoration: none;		
+	}
+	
+p.erreur { /* définition du style message d'erreur */
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.50em;
+	color: #9c3232; /* couleur : rouge */
+	text-align: center;
+	text-decoration: none;
+}
+	  
+	
+p.resultat {						/* définition du style message d'erreur */
+	font-family: Arial, "sans serif";
+	font-size: 1.50em;
+	color: #000098;				/* couleur : rouge */
+	text-align:left;
+	margin-left:20px;
+	text-decoration: none;		
+	}
+
+label{
+	font-family: monospace, sans-serif; 
+	font-size: 1.20em; /* 120% de la taille standard */
+	margin-left: 10px;
+}
+
+table { /* définition générale du style du tableau */
+	border:3px solid #6495ed; /* bordure du tableau : épaisseur, continue/pointillée (dotted), couleur */
+	/*  border-collapse:collapse;   /* option qui fusionne les bordures du tableau aux bordures de cellules */
+	width:40%; /* largeur du tableau dans la page */
+	margin:auto; /* marges automatiques : centrage par défaut */
+	margin-top:20px;
+	background-color: #D0E3FA;
+}
+
+tr{ /* table row : ligne de tableau */
+	height: 20px;	/* hauteur de ligne */
+
+}
+
+th { /* table header : 1ere ligne du tableau */
+	font-family: monospace; 
+	font-size: 1.20em; /* 80% de la taille standard */
+	text-align: center;  /* centrage */
+	border: 1px solid #000099; /* bordure du table header */
+	width: 33%;				/* largeur  */
+	padding: 5px;			/* marge interne  : peut être spécifiée différente au dessus et en dessous
+						Avec padding-top: vous pouvez spécifier l'espace entre le contenu de l'élément et sa limite supérieure, etc. */
+	background-color: #D0E3FA;
+	background-image: url('sky.jpg'); /* fond pour les cellules th */
+}
+
+
+td { /* table division : division de tableau, autrement dit "cellule" */
+	font-family: verdana, sans-serif;
+	font-size: 0.80em; /* 80% de la taille standard */
+	width: 33%; /* suppose 3 colonnes */
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle; /*qui peut prendre les valeurs :  baseline | top | middle */
+	background-color: #ffffff;
+}
+
+img.logo{
+	width: 70px;
+	height: auto;
+	display: left;
+	-ms-flex-align: center;
+	margin: auto;
+	padding: 3px;
+
+}
+
+h1.left-title {
+
+	text-align: left;
+	color: black;
+	padding: 15px;
+	display:inline-flex;
+	-ms-flex-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1.center-title {
+
+	text-align: center;
+	color: black;
+	padding: 15px;
+	display:inline-flex;
+	-ms-flex-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.sub1{
+	margin: 5%;
+	padding: 5px;
+	box-shadow: 0px 0px 3px #000000;
+}
+
+div.sub2{
+	margin: 5%;
+	padding: 5px;
+	box-shadow: 0px 0px 3px #000000;
+}
+
+.publish,
+.login,
+.signup{
+	margin: auto;
+	padding: 10px;
+	border: none;
+	box-shadow: 0px 5px 1px #575656;
+	background-color: #e3a2e9;
+	border-radius: 100px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.20em; 
+	text-align: center;
+
+}
+
+.back{
+	margin: auto;
+	padding: 10px;
+	box-shadow: 0px 5px 1px #575656;
+	background-color: #d7bbeb;
+	border-radius: 100px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.20em; 
+	text-align: center;
+}
+
+a.button{
+	margin: auto;
+	padding: 10px;
+	box-shadow: 0px 5px 1px #575656;
+	background-color: #e3a2e9;
+	border-radius: 100px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.20em; 
+	text-align: center;
+
+}
+  
+a {
+	text-decoration: none;
+}
+  
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+	background-color: white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+
+.logo {
+	width: auto;
+	height: auto;
+	display: left;
+
+}
+  
+.button1,
+.button2 {
+	display: flex;
+	gap: 15px;
+}
+  
+.button {
+	background-color: #d493ff;
+	color: black;
+	font-weight: bold;
+	font-family: sans-serif;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px rgba(151, 150, 150, 0.2);
+	transition: transform 0.3s ease;
+}
+  
+  
+.publish-link:hover,
+.signup:hover,
+.back:hover,
+.login:hover,
+.button:hover {
+	transform: scale(1.05);
+}
+
+  .carousel {
+	display: flex;
+	overflow-x: auto;
+	padding: 10px;
+	gap: 10px;
+  }
+  
+  .image {
+	width: 200px;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+
+  .publish-link {
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	padding: 50px;
+	transition: transform 0.3s ease;
+  }
+  
+  div.login {
+	margin: auto;
+	padding: 30px;
+	width: 15%;
+	box-shadow: 0px 5px 1px #a9a9a9;
+	border-radius: 100px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.20em;
+	text-align: left;
+	background-color: #d7bbeb;
+
+
+  }
+
+tr.login {
+	height: 20px;
+	width: 20%;
+	color: white;
+  }
+
+  div.half {
+	margin-left: 50%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.20em;
+	text-align: left;
+  }

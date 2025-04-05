@@ -1,1 +1,1 @@
-# WEBtoon
+# webtoon-project
