@@ -12,6 +12,6 @@
 echo "<p class='erreur'>$erreur</p>";
  ?>
  <!-- Lien pour retourner à la page initiale -->
- <a href="index.php" class="back">BACK</a>
+ <a href="index.html" class="back">BACK</a>s
 <body>
 </html>

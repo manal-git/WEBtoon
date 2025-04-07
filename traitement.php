@@ -19,7 +19,7 @@ else
 {
 	include 'fonctions.php'; // fichier externe contenant les fonctions d'accès à la base de données
 	
-	$nb_lignes=insert_utilisateur(pseudo: $pseudo, prenom: $prenom); // appel de fonction d'insertion (couche Modele)
+	$nb_lignes=insert_utilisateur(pseudo: $pseudo, email: $email, age: $age, mdp: $password); // appel de fonction d'insertion (couche Modele)
 
 	if($nb_lignes > 0) // on a inséré 1 ligne
 	{

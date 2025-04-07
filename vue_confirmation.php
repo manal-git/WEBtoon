@@ -17,6 +17,6 @@
 	$n lignes insérées</p>";
 ?>
  <!-- Lien pour retourner à la page initiale -->
- <a href="index.php">Retour accueil</a>
-<body>
+ <a href="index.html">Retour accueil</a>
+<body>s
 </html>
