@@ -13,12 +13,11 @@ a {
 	text-decoration: none;
 }
 
-
 a:hover {
-	font-family: Arial, "sans serif";
-	font-size: 1.10em;
-	color: #d359a8;
-	text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.10em;
+    color: #d359a8;
+    text-decoration: none;
 }
 
 p.erreur {
@@ -134,6 +133,7 @@ h1.center-title {
 	-ms-flex-align: center;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 .signup-form {
 	display: flex;
@@ -316,3 +316,35 @@ div.half {
 	font-size: 1.20em;
 	text-align: left;
 }
+
+.header2 {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	padding: 10px 10px;
+	background-color: rgb(245, 222, 245);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container{
+	background-color: #77767641;
+	margin: auto;
+}
+
+.header3{
+	display: flex;
+	height: 10px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 10px;
+	background-color: rgb(250, 213, 230);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bloc{
+	margin: auto;
+	box-shadow: 0px 3px 1px #5756565e;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+

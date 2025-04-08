@@ -3,12 +3,11 @@
 // page contenant les différentes fonctions d'accès à la base
 
 //_______________________________________________________________
-function insert_utilisateur($pseudo, $email, $mdp, $age) // insere un nouveau membre  dans la table membres
+function insert_utilisateur($pseudo, $email, $mdp, $age) 
 {
-	include 'param_connexion.php'; // fichier externe car la connexion est utilisée dans différentes pages
-	$nb_lignes=0; // initialisation de la variable à zéro
+	include 'param_connexion.php'; 
+	$nb_lignes=0; 
 	
-	// Requete d'insertion MYSQL. 
 	$requete= "INSERT INTO utilisateur (pseudo, email, mdp, age) VALUES ('$pseudo','$email', $mdp, $age);";
 	
 	// tentative d'execution de la requete INSERT dans la base
@@ -35,39 +34,35 @@ function insert_utilisateur($pseudo, $email, $mdp, $age) // insere un nouveau me
  
  
   //_______________________________________________________________
- function obtenir_liste_des_adherents() // fonction qui renvoie un tableau de tous les adherents
- {
-	require 'param_connexion.php'; // pour connexion au SGBD
-	
-	$les_adherents = array(); // création du tableau
-	$requete="select * from membres";
-	$resultat_sql = mysqli_query($lien_base, "$requete");
-	if($resultat_sql == false) // si impossible d'exécuter la requête SELECT
-	{	
-		die("Impossible d'executer la requete: $requete " . mysqli_error());
-	}
-	else // SELECT réussi
-	{
-		$nb_lignes=mysqli_affected_rows($lien_base); // compte le nombre de lignes du SELECT
-		$i=1; // compteur
-		while($i<=$nb_lignes)
-		{
-			// ajout des résultats du select
-			$les_adherents[] = mysqli_fetch_array($resultat_sql); 
-			$i=$i+1; // incrémentation
-		}
-		
-	}
-
-	return $les_adherents;// le tableau sera vide en cas d'erreur
-}// fin fonction()
+  function webtoon_list() 
+  {
+	  require 'param_connexion.php';  
+  
+	  $webtoon = array(); // Create the array to store webtoons.
+  
+	  // Define the query to retrieve all webtoons
+	  $requete = "SELECT * FROM webtoon";
+	  $resultat_sql = mysqli_query($lien_base, $requete);
+  
+	  if ($resultat_sql === false) { // If the query execution fails.
+		  die("Impossible d'exécuter la requête: $requete " . mysqli_error($lien_base)); // Error handling with proper error message.
+	  }
+  
+	  // Fetch all the records and store them in the array.
+	  while ($row = mysqli_fetch_array($resultat_sql, MYSQLI_ASSOC)) {
+		  $webtoon[] = $row; // Append the fetched row to the $webtoon array.
+	  }
+  
+	  return $webtoon; // Return the populated array.
+  }
+  
 
 //_________________________________________________________________
 
   //_______________________________________________________________
- function obtenir_recherche_par_nom($nom) // fonction qui renvoie un tableau de tous les adherents
+ function obtenir_recherche_par_nom($nom) 
  {
-	require 'param_connexion.php'; // pour connexion au SGBD
+	require 'param_connexion.php';
 	
 	$les_adherents = array(); // création du tableau
 	$requete="select * from membres where nom like '%$nom%'";
@@ -135,8 +130,7 @@ function update_membre($id,$nom, $prenom) // insere un nouveau membre  dans la t
 	}
 	else // insert réussi
 	{
-		$nb_lignes=mysqli_affected_rows($lien_base); // compte le nombre de lignes affectées (normalement 1 ligne insérée)
-
+		$nb_lignes=mysqli_affected_rows($lien_base); 
 	}
 
 	return $nb_lignes ; // renvoie le nb de lignes insérées : normalement 1

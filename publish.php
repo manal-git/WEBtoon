@@ -6,7 +6,9 @@
 <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
   <!-- appel feuille de style -->
  <link href="style_op.css" type="text/css" rel="stylesheet" media="all">
- <img class="logo" src="logo.png">
+ <a href="index.html">
+    <img class="logo" src="logo.png">
+ </a>
 </head>
 <body>
 
@@ -33,7 +35,7 @@
 
 
 <tr>
-<a href="index.php" class="back">BACK</a>
+<a href="index.html" class="back">BACK</a>
 <td colspan="2"><input type='submit' value='PUBLISH'class="publish"></td>
 </tr>
 

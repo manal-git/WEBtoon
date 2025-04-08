@@ -6,6 +6,8 @@ $pseudo=$_POST["pseudo"];
 $email=$_POST["email"];
 $age=$_POST["age"];
 $password=$_POST["password"];
+$confirm_pass=$_POST["password"];
+
 
 // Vérification des champs nom et prenom (si il ne sont pas vides ?)
 if( empty($pseudo) || empty($email) ||empty($age) || empty($password) )  // le signe || signifie OU
