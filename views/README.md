@@ -1,0 +1,1 @@
+This directory contains all the View templates that handle the presentation layer and user interface.
