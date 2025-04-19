@@ -6,18 +6,13 @@ body {
 	margin: 0px;
 }
 
-a {
-	font-family: Arial, "sans serif";
-	font-size: 1.10em;
-	color: #000000;
-	text-decoration: none;
+* {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a:hover {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.10em;
-    color: #d359a8;
-    text-decoration: none;
+a {
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
 }
 
 p.erreur {
@@ -69,25 +64,6 @@ tr {
 
 }
 
-th {
-	/* table header : 1ere ligne du tableau */
-	font-family: monospace;
-	font-size: 1.20em;
-	/* 80% de la taille standard */
-	text-align: center;
-	/* centrage */
-	border: 1px solid #000099;
-	/* bordure du table header */
-	width: 33%;
-	/* largeur  */
-	padding: 5px;
-	/* marge interne  : peut être spécifiée différente au dessus et en dessous
-						Avec padding-top: vous pouvez spécifier l'espace entre le contenu de l'élément et sa limite supérieure, etc. */
-	background-color: #D0E3FA;
-	background-image: url('sky.jpg');
-	/* fond pour les cellules th */
-}
-
 
 td {
 	/* table division : division de tableau, autrement dit "cellule" */
@@ -101,16 +77,6 @@ td {
 	vertical-align: middle;
 	/*qui peut prendre les valeurs :  baseline | top | middle */
 	background-color: #ffffff;
-}
-
-img.logo {
-	width: 70px;
-	height: auto;
-	display: left;
-	-ms-flex-align: center;
-	margin: auto;
-	padding: 3px;
-
 }
 
 h1.left-title {
@@ -186,25 +152,34 @@ h1.center-title {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.publish,
-.login,
-.signup {
+.button-pink {
 	margin: auto;
 	padding: 10px;
+	color: black;
 	border: none;
-	box-shadow: 0px 5px 1px #575656;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	background-color: #e3a2e9;
 	border-radius: 100px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 1.20em;
 	text-align: center;
-
+	transition: all 0.1s ease-in-out;
 }
 
-.back {
+.button-pink:hover {
+	transform: scale(1.1) !important;
+}
+
+.button-pink:active {
+	transform: scale(0.9) !important;
+	box-shadow: none;
+}
+
+.link-purple {
 	margin: auto;
 	padding: 10px;
-	box-shadow: 0px 5px 1px #575656;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	background-color: #d7bbeb;
 	border-radius: 100px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -212,37 +187,22 @@ h1.center-title {
 	text-align: center;
 }
 
-a.button {
-	margin: auto;
-	padding: 10px;
-	box-shadow: 0px 5px 1px #575656;
-	background-color: #e3a2e9;
-	border-radius: 100px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 1.20em;
-	text-align: center;
-
-}
-
-a {
-	text-decoration: none;
-}
-
 .header {
 	display: flex;
 	justify-content: space-between;
+	height: 70px;
 	align-items: center;
 	padding: 10px 10px;
 	background-color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: rgba(0, 0, 0, 0.078) 0px 10px 20px, rgba(0, 0, 0, 0.108) 0px 6px 6px;
 }
 
 
 .logo {
 	width: auto;
-	height: auto;
-	display: left;
-
+	height: 100%;
+	object-fit: contain;
+	align-self: left;
 }
 
 .button1,
@@ -257,17 +217,8 @@ a {
 	font-weight: bold;
 	font-family: sans-serif;
 	border-radius: 20px;
-	box-shadow: 2px 2px 4px rgba(151, 150, 150, 0.2);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	transition: transform 0.3s ease;
-}
-
-
-.publish-link:hover,
-.signup:hover,
-.back:hover,
-.login:hover,
-.button:hover {
-	transform: scale(1.05);
 }
 
 .carousel {
@@ -292,11 +243,20 @@ a {
 	transition: transform 0.3s ease;
 }
 
+.logo-publish {
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	display: flex;
+	padding: 10px 10px;
+	justify-content: flex-start;
+}
+
 div.login-field {
 	margin: auto;
 	padding: 30px;
 	width: 15%;
-	box-shadow: 0px 5px 1px #a9a9a9;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 	border-radius: 100px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 1.20em;
@@ -319,32 +279,34 @@ div.half {
 
 .header2 {
 	display: flex;
-	height: 60px;
+	height: 70px;
 	align-items: center;
 	padding: 10px 10px;
 	background-color: rgb(245, 222, 245);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.container{
+.container {
 	background-color: #77767641;
 	margin: auto;
 }
 
-.header3{
+.no-shadow {
+	box-shadow: none !important;
+}
+
+.header3 {
 	display: flex;
 	height: 10px;
 	justify-content: space-between;
+	gap: 10px;
+	overflow-x: auto;
 	align-items: center;
 	padding: 10px 10px;
 	background-color: rgb(250, 213, 230);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.bloc{
+.bloc {
 	margin: auto;
-	box-shadow: 0px 3px 1px #5756565e;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-

@@ -1,0 +1,1 @@
+This directory contains all the Model classes that handle database operations and business logic.

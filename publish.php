@@ -35,7 +35,7 @@
 
 
 <tr>
-<a href="index.html" class="back">BACK</a>
+<a href="index.html" class="link-purple">BACK</a>
 <td colspan="2"><input type='submit' value='PUBLISH'class="publish"></td>
 </tr>
 
