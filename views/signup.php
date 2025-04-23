@@ -7,31 +7,35 @@
     <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
     <!-- appel feuille de style -->
     <link href="../style_op.css" type="text/css" rel="stylesheet" media="all">
-    <div class="logo-publish">
-        <a href="../index.html">
-            <img class="logo" src="../public/logo.png" class="logo">
-        </a>
-    </div>
 </head>
 
 <body>
+    
+<div class="header1">
+		<div class="logo">
+			<a href="../index.html">
+				<img class="logo" src="../public/logo.png">
+			</a>
+		</div>
+</div>
+
     <h1 class="left-titre">SIGN UP</h1>
     <form method='POST' action="../controllers/register.php" name='annuaire' enctype='application/x-www-form-urlencoded' class="signup-form">
         <div class="signup-fields">
             <div class="sub1">
-                <div class="field-label">
+                <div class="sign-field-label">
                     <label for="pseudo">
                         PSEUDO :
                     </label>
                     <input type='text' name='pseudo' size='20'>
                 </div>
-                <div class="field-label">
+                <div class="sign-field-label">
                     <label for="email">
                         EMAIL ADDRESS :
                     </label>
                     <input type='text' name='email' size='50' value=''>
                 </div>
-                <div class="field-label">
+                <div class="sign-field-label">
                     <label for="age">
                         AGE :
                     </label>
@@ -39,13 +43,13 @@
                 </div>
             </div>
             <div class="sub2">
-                <div class="field-label">
+                <div class="sign-field-label">
                     <label for="password">
                         PASSWORD :
                     </label>
                     <input type='password' name='password' size='20' value=''>
                 </div>
-                <div class="field-label">
+                <div class="sign-field-label">
                     <label for="confirm_pass">
                         COMFIRM PASSWORD :
                     </label>
@@ -53,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="spacing-buttons">
             <a href="../index.html" class="link-purple">BACK</a>
             <button type='submit' value='SIGN UP' class="button-pink">
                 SIGN UP

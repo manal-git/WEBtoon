@@ -34,10 +34,10 @@
 </div>
 
 
-<tr>
+<div class="spacing-buttons">
 <a href="index.html" class="link-purple">BACK</a>
 <td colspan="2"><input type='submit' value='PUBLISH'class="publish"></td>
-</tr>
+</div>
 
 </form>
 

@@ -16,22 +16,18 @@ a {
 }
 
 p.erreur {
-	/* définition du style message d'erreur */
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 1.50em;
 	color: #9c3232;
-	/* couleur : rouge */
 	text-align: center;
 	text-decoration: none;
 }
 
 
 p.resultat {
-	/* définition du style message d'erreur */
 	font-family: Arial, "sans serif";
 	font-size: 1.50em;
 	color: #000098;
-	/* couleur : rouge */
 	text-align: left;
 	margin-left: 20px;
 	text-decoration: none;
@@ -40,44 +36,17 @@ p.resultat {
 label {
 	font-family: monospace, sans-serif;
 	font-size: 1.20em;
-	/* 120% de la taille standard */
 	margin-left: 10px;
 }
 
 table {
-	/* définition générale du style du tableau */
 	border: 3px solid #6495ed;
-	/* bordure du tableau : épaisseur, continue/pointillée (dotted), couleur */
-	/*  border-collapse:collapse;   /* option qui fusionne les bordures du tableau aux bordures de cellules */
 	width: 40%;
-	/* largeur du tableau dans la page */
 	margin: auto;
-	/* marges automatiques : centrage par défaut */
 	margin-top: 20px;
 	background-color: #D0E3FA;
 }
 
-tr {
-	/* table row : ligne de tableau */
-	height: 20px;
-	/* hauteur de ligne */
-
-}
-
-
-td {
-	/* table division : division de tableau, autrement dit "cellule" */
-	font-family: verdana, sans-serif;
-	font-size: 0.80em;
-	/* 80% de la taille standard */
-	width: 33%;
-	/* suppose 3 colonnes */
-	padding: 5px;
-	text-align: center;
-	vertical-align: middle;
-	/*qui peut prendre les valeurs :  baseline | top | middle */
-	background-color: #ffffff;
-}
 
 h1.left-title {
 
@@ -90,16 +59,23 @@ h1.left-title {
 }
 
 
-h1.center-title {
-
+.center-title {
 	text-align: center;
 	color: black;
 	padding: 15px;
-	display: inline-flex;
-	-ms-flex-align: center;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	float : center;
+
 }
 
+.form-group {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	justify-content: left;
+	align-items: right;
+	gap: 5px;
+	
+}
 
 .signup-form {
 	display: flex;
@@ -111,6 +87,7 @@ h1.center-title {
 
 .signup-fields {
 	width: 50%;
+	padding: 5%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -136,12 +113,29 @@ h1.center-title {
 
 .field-label {
 	display: flex;
+	background-color: #d7bbeb;
+	padding: 10%;
+	border-radius: 100px;
+	margin: 5%;
 	flex-direction: column;
 	gap: 5px;
 	justify-content: center;
 	width: 100%;
 	align-items: start;
 }
+
+.sign.field-label {
+	display: flex;
+	padding: 10%;
+	border-radius: 100px;
+	margin: 5%;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+	width: 100%;
+	align-items: start;
+}
+
 
 .field-label input {
 	padding-left: 10px;
@@ -197,6 +191,34 @@ h1.center-title {
 	box-shadow: rgba(0, 0, 0, 0.078) 0px 10px 20px, rgba(0, 0, 0, 0.108) 0px 6px 6px;
 }
 
+.header1 {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	padding: 10px 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+.header2 {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	padding: 10px 10px;
+	background-color: rgb(245, 222, 245);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.header3 {
+	display: flex;
+	height: 10px;
+	justify-content: space-between;
+	gap: 10px;
+	overflow-x: auto;
+	align-items: center;
+	padding: 10px 10px;
+	background-color: rgb(250, 213, 230);
+}
+
 
 .logo {
 	width: auto;
@@ -223,14 +245,17 @@ h1.center-title {
 
 .carousel {
 	display: flex;
+	margin: auto;
 	overflow-x: auto;
+	background-color: #e9d7f6;
 	padding: 10px;
 	gap: 10px;
 }
 
-.image {
+.default {
 	width: 200px;
 	height: auto;
+	padding: 2.5px;
 	border-radius: 10px;
 }
 
@@ -252,7 +277,7 @@ h1.center-title {
 	justify-content: flex-start;
 }
 
-div.login-field {
+.login-fields {
 	margin: auto;
 	padding: 30px;
 	width: 15%;
@@ -277,15 +302,6 @@ div.half {
 	text-align: left;
 }
 
-.header2 {
-	display: flex;
-	height: 70px;
-	align-items: center;
-	padding: 10px 10px;
-	background-color: rgb(245, 222, 245);
-	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
 .container {
 	background-color: #77767641;
 	margin: auto;
@@ -295,18 +311,25 @@ div.half {
 	box-shadow: none !important;
 }
 
-.header3 {
-	display: flex;
-	height: 10px;
-	justify-content: space-between;
-	gap: 10px;
-	overflow-x: auto;
-	align-items: center;
-	padding: 10px 10px;
-	background-color: rgb(250, 213, 230);
-}
+
 
 .bloc {
 	margin: auto;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.right-field {
+	padding: 30px;
+	margin: 2%;
+	text-align: left;
+	justify-content: right;
+	background-color: aquamarine;
+}
+
+.left-field {
+	margin: 2%;
+	padding: 30px;
+	text-align: left;
+	justify-content: left;	
+	background-color: #6495ed;
 }
