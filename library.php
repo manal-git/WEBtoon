@@ -11,14 +11,14 @@
 
 <body>
 
-	<div class="header2">
+<div class="header2">
 		<div class="logo">
 			<a href="index.html">
 				<img class="logo" src="../webtoon/public/logo.png">
 			</a>
 		</div>
 		<h1>LIBRARY</h1>
-	</div>
+</div>
 
 	<div class=container>
 		<h4>WANT TO READ</h4>

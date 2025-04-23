@@ -6,37 +6,36 @@
     <meta NAME="Author" CONTENT="M">
     <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
     <link href="style_op.css" type="text/css" rel="stylesheet" media="all">
-    <div class="logo-publish">
-        <a href="index.html">
-            <img class="logo" src="./public/logo.png" class="logo">
-        </a>
-    </div>
+
 
 </head>
 
 <body>
+<div class="header1">
+		<div class="logo">
+			<a href="index.html">
+				<img class="logo" src="../webtoon/public/logo.png">
+			</a>
+		</div>
+</div>
 
-    <h1 class="center-titre">LOG IN</h1>
-    <form method='POST' action='controllers/login.php' name='annuaire' enctype='application/x-www-form-urlencoded'>
+<h1 class="center-title">LOG IN</h1>
+<form method='POST' action='controllers/login.php' name='annuaire' enctype='application/x-www-form-urlencoded'>
+    <div class="login-fields">
+        <div class="field-label">
+                <label for="email">EMAIL ADDRESS :</label>
+                <input type='text' name='email' id='email'>
 
-        <div class="login-fields">
-            <div class="field-label">
-                <label for="email address">
-                    EMAIL ADDRESS :
-                </label>
-                <input type='text' name='email' size='20' value=''>
-
-                <label for="password">
-                    PASSWORD :
-                </label>
-                <input type='password' name='password' size='20' value=''>
-            </div>
+                <label for="password">PASSWORD :</label>
+                <input type='password' name='password' id='password'>
         </div>
+        <div class="spacing-buttons">
+                <a href="index.html" class="link-purple">BACK</a>
+                <input type='submit' value='LOG IN' class="button-pink">
+        </div>
+    </div>
 
-        <a href="index.html" class="link-purple">BACK</a>
-        <td colspan="2"><input type='submit' value='LOG IN' class="button-pink"></td>
-
-    </form>
+</form>
 
 
 </body>
