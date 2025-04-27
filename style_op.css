@@ -23,6 +23,9 @@ p.erreur {
 	text-decoration: none;
 }
 
+.hidden {
+	display: none;
+}
 
 p.resultat {
 	font-family: Arial, "sans serif";
@@ -36,7 +39,6 @@ p.resultat {
 label {
 	font-family: monospace, sans-serif;
 	font-size: 1.20em;
-	margin-left: 10px;
 }
 
 table {
@@ -63,18 +65,70 @@ h1.left-title {
 	text-align: center;
 	color: black;
 	padding: 15px;
-	float : center;
+	float: center;
 
 }
 
 .form-group {
 	display: flex;
-	flex-direction: row;
-	gap: 5px;
-	justify-content: left;
-	align-items: right;
-	gap: 5px;
-	
+	flex-direction: column;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+.form-group label {
+	font-weight: bold;
+	font-size: 1.20em;
+	color: black;
+	font-family: 'roboto', sans-serif;
+}
+
+.form-group input:not([type="file"]),
+select,
+textarea {
+	padding-left: 10px;
+	font-size: 1rem;
+	width: 100%;
+	border-radius: 10px;
+	height: 35px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	border: 1px solid rgb(224, 224, 224);
+	background-color: rgb(245, 244, 244);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button {
+	display: none;
+}
+
+.cover-label,
+.content-label {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	color: gray !important;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(211, 211, 211);
+	border: 1px solid rgb(138, 137, 137);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	border-radius: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.cover-label:hover,
+.content-label:hover {
+	background-color: rgb(240, 210, 253);
+	cursor: pointer;
+}
+
+.form-group textarea {
+	padding: 10px;
+	height: 80px;
 }
 
 .signup-form {
@@ -113,10 +167,7 @@ h1.left-title {
 
 .field-label {
 	display: flex;
-	background-color: #d7bbeb;
-	padding: 10%;
 	border-radius: 100px;
-	margin: 5%;
 	flex-direction: column;
 	gap: 5px;
 	justify-content: center;
@@ -147,7 +198,6 @@ h1.left-title {
 }
 
 .button-pink {
-	margin: auto;
 	padding: 10px;
 	color: black;
 	border: none;
@@ -248,8 +298,53 @@ h1.left-title {
 	margin: auto;
 	overflow-x: auto;
 	background-color: #e9d7f6;
-	padding: 10px;
+	height: 300px;
+	padding: 40px 10px 40px 10px;
 	gap: 10px;
+}
+
+.carousel-item {
+	position: relative;
+	height: 100%;
+	width: 200px;
+	transition: transform 0.3s ease;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.carousel .home-covers {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel .carousel-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	z-index: 10;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 10px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	font-size: 1rem;
+	margin: 10px 0px;
+}
+
+.carousel .carousel-caption h3 {
+	margin: 5px;
+}
+
+.carousel .carousel-caption p {
+	margin: 5px 5px 10px 5px;
+}
+
+.carousel .carousel-caption .carousel-link a {
+	font-size: 1rem;
+	padding: 5px 10px;
 }
 
 .default {
@@ -280,9 +375,9 @@ h1.left-title {
 .login-fields {
 	margin: auto;
 	padding: 30px;
-	width: 15%;
+	width: fit-content;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-	border-radius: 100px;
+	border-radius: 15px;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 1.20em;
 	text-align: left;
@@ -311,25 +406,78 @@ div.half {
 	box-shadow: none !important;
 }
 
-
-
 .bloc {
 	margin: auto;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .right-field {
-	padding: 30px;
-	margin: 2%;
+	padding: 10px 40px;
 	text-align: left;
 	justify-content: right;
-	background-color: aquamarine;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 400px;
+	width: 100%;
 }
 
 .left-field {
-	margin: 2%;
-	padding: 30px;
+	padding: 10px 40px;
 	text-align: left;
-	justify-content: left;	
-	background-color: #6495ed;
+	justify-content: left;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.publish-fields {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.publish-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.publish-body {
+	width: 70%;
+}
+
+.publish-title h1 {
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spacing-buttons {
+	margin: auto;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.svg-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+}
+
+.svg-icon svg {
+	fill: gray;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
 }

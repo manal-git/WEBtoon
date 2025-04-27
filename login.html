@@ -11,31 +11,35 @@
 </head>
 
 <body>
-<div class="header1">
-		<div class="logo">
-			<a href="index.html">
-				<img class="logo" src="../webtoon/public/logo.png">
-			</a>
-		</div>
-</div>
-
-<h1 class="center-title">LOG IN</h1>
-<form method='POST' action='controllers/login.php' name='annuaire' enctype='application/x-www-form-urlencoded'>
-    <div class="login-fields">
-        <div class="field-label">
-                <label for="email">EMAIL ADDRESS :</label>
-                <input type='text' name='email' id='email'>
-
-                <label for="password">PASSWORD :</label>
-                <input type='password' name='password' id='password'>
-        </div>
-        <div class="spacing-buttons">
-                <a href="index.html" class="link-purple">BACK</a>
-                <input type='submit' value='LOG IN' class="button-pink">
+    <div class="header1">
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo" src="../webtoon/public/logo.png">
+            </a>
         </div>
     </div>
 
-</form>
+    <h1 class="center-title">LOG IN</h1>
+    <form method='POST' action='controllers/login.php' name='annuaire' enctype='application/x-www-form-urlencoded'>
+        <div class="login-fields">
+            <div class="field-label">
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS :</label>
+                    <input type='text' name='email' id='email'>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">PASSWORD :</label>
+                    <input type='password' name='password' id='password'>
+                </div>
+            </div>
+            <div class="spacing-buttons">
+                <a href="index.html" class="link-purple">BACK</a>
+                <input type='submit' value='LOG IN' class="button-pink">
+            </div>
+        </div>
+
+    </form>
 
 
 </body>
