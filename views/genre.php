@@ -54,7 +54,7 @@ $genres = $genreModel->getAllGenres();
               <h3>' . $webtoon['titre_bd'] . '</h3>
               <p>' . $webtoon['genre_bd'] . '</p>
               <div class="carousel-link">
-                <a href="webtoon.php?id=' . $webtoon['id'] . '" class="button-pink">READ</a>
+                <a href="webtoon.php?id=' . $webtoon['webtoon_id'] . '" class="button-pink">READ</a>
               </div>
             </div>
           </div>
