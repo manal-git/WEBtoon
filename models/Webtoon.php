@@ -45,7 +45,7 @@ class Webtoon extends Database
     // Find webtoons by genre
     public function findByGenre($genre)
     {
-        $query = "SELECT w.*, g.*, u.pseudo as author_name 
+        $query = "SELECT w.id as webtoon_id, w.*, g.*, u.pseudo as author_name 
                   FROM webtoon w 
                   JOIN utilisateur u ON w.id_auteur = u.id 
                   JOIN genre g ON w.id_genre = g.id
