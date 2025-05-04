@@ -20,7 +20,7 @@ $genres = $genreModel->getAllGenres();
 <html>
 
 <head>
-    <title>Library</title>
+    <title>Genres</title>
     <meta NAME="Author" CONTENT="M">
     <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
     <link href="../style_op.css" type="text/css" rel="stylesheet" media="all">
@@ -54,7 +54,7 @@ $genres = $genreModel->getAllGenres();
               <h3>' . $webtoon['titre_bd'] . '</h3>
               <p>' . $webtoon['genre_bd'] . '</p>
               <div class="carousel-link">
-                <a href="webtoon.php?id=' . $webtoon['webtoon_id'] . '" class="button-pink">READ</a>
+                <a href="webtoon.php?id=' . $webtoon['id'] . '" class="button-pink">READ</a>
               </div>
             </div>
           </div>
