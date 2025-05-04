@@ -6,7 +6,7 @@ $loginController = new LoginController();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $loginController->login();
 } else {
-    header('Location: ../login.html');
+    header('Location: ../login.php');
     exit();
 }
 ?>
