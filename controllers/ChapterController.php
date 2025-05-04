@@ -11,7 +11,7 @@ class ChapterController extends Controller {
 
     public function upload() {
         if (!isset($_SESSION['user_id'])) {
-            $this->redirect('login.html');
+            $this->redirect('login.php');
         }
 
         $data = [

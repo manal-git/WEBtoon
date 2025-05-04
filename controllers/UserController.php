@@ -1,15 +1,19 @@
 <?php
+session_start();
 require_once dirname(__DIR__) . '/controllers/Controller.php';
 require_once dirname(__DIR__) . '/models/User.php';
 
-class UserController extends Controller {
+class UserController extends Controller
+{
     private $userModel;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->userModel = new User();
     }
 
-    public function register() {
+    public function register()
+    {
         $data = [
             'pseudo' => $this->getPostData('pseudo'),
             'email' => $this->getPostData('email'),
@@ -35,5 +39,10 @@ class UserController extends Controller {
             $this->redirect('views/error.php', ['erreur' => 'Error inserting data']);
         }
     }
+    public function getMyLibrary()
+    {
+        $userId = $_SESSION['user_id'];
+        $library = $this->userModel->getMyLibrary($userId);
+        return $library;
+    }
 }
-?>

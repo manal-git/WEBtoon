@@ -2,6 +2,13 @@
 require_once 'Database.php';
 
 class Chapter extends Database {
+
+    public function __construct()
+    {
+        // Ensure to use the Singleton instance of Database
+        $this->lien_base = Database::getInstance()->lien_base;
+    }
+
     public function create($webtoon_id, $chapter_number, $title, $content_path) {
         $query = "INSERT INTO chapter (webtoon_id, chapter_number, title, content_path) "
                . "VALUES ($webtoon_id, $chapter_number, '$title', '$content_path')";

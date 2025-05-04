@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: ../login.html');
+    header('Location: ../login.php');
     exit();
 }
 
@@ -24,7 +24,7 @@ $user_pseudo = $_SESSION['pseudo'];
 <body>
     <div class="header1">
         <div class="logo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img class="logo" src="../public/logo.png">
             </a>
         </div>
@@ -112,7 +112,7 @@ $user_pseudo = $_SESSION['pseudo'];
                 <div class="spacing-buttons">
                     <input class="hidden" type="hidden" name="action" value="upload">
                     <div class="navigation">
-                        <a href="../index.html" class="link-purple">Back</a>
+                        <a href="../index.php" class="link-purple">Back</a>
                     </div>
                     <button type="submit" class="button-pink">Publish</button>
                 </div>

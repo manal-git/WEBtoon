@@ -11,7 +11,9 @@ $message_erreur = isset($_GET['erreur']) ? $_GET['erreur'] : 'An unknown error o
     <div class="container">
         <h1>Error</h1>
         <p class="error-message"><?php echo htmlspecialchars($message_erreur); ?></p>
-        <a href="../index.html" class="link-purple">Return to Home</a>
+    </div>
+    <div class="purple-spacing">
+        <a href="../index.php" class="link-purple">Return to Home</a>
     </div>
 </body>
 </html>
