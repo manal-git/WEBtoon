@@ -5,7 +5,7 @@ class Database {
 
     // Private constructor to prevent direct instantiation
     private function __construct() {
-        include_once dirname(__DIR__) . '../param_connexion.php';
+        include_once dirname(__DIR__) . '/param_connexion.php';
         $this->lien_base = $lien_base;
     }
 
