@@ -27,7 +27,7 @@ class LoginController extends Controller {
                 session_start();
                 $_SESSION['user_id'] = $userData['id'];
                 $_SESSION['pseudo'] = $userData['pseudo'];
-                $this->redirect('../index.html');
+                $this->redirect('../index.php');
             }
         }
 
@@ -37,7 +37,7 @@ class LoginController extends Controller {
     public function logout() {
         session_start();
         session_destroy();
-        $this->redirect('../login.html');
+        $this->redirect('../login.php');
     }
 }
 ?>

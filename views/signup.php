@@ -13,7 +13,7 @@
     
 <div class="header1">
 		<div class="logo">
-			<a href="../index.html">
+			<a href="../index.php">
 				<img class="logo" src="../public/logo.png">
 			</a>
 		</div>
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="spacing-buttons">
-            <a href="../index.html" class="link-purple">BACK</a>
+            <a href="../index.php" class="link-purple">BACK</a>
             <button type='submit' value='SIGN UP' class="button-pink">
                 SIGN UP
             </button>
