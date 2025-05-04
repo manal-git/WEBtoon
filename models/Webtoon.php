@@ -75,7 +75,7 @@ class Webtoon extends Database
     // Get all webtoons
     public function getAll()
     {
-        $query = "SELECT w.*, g.genre_bd, u.pseudo as author_name 
+        $query = "SELECT w.id as webtoon_id, w.*, g.genre_bd, u.pseudo as author_name 
                   FROM webtoon w 
                   JOIN utilisateur u ON w.id_auteur = u.id 
                   JOIN genre g ON w.id_genre = g.id 
