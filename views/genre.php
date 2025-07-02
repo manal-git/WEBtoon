@@ -20,7 +20,7 @@ $genres = $genreModel->getAllGenres();
 <html>
 
 <head>
-    <title>Genres</title>
+    <title>Genre</title>
     <meta NAME="Author" CONTENT="M">
     <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
     <link href="../style_op.css" type="text/css" rel="stylesheet" media="all">
